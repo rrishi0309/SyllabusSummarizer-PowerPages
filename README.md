@@ -127,7 +127,7 @@ All fields are conditionally included — if content is not present in the sylla
 <img src="https://github.com/user-attachments/assets/9049eba0-0abc-4ec9-b6a5-3a83403d0e57" width="800"/>
 
 ### AI Builder Prompt Editing in AI Hub
-<img src="https://github.com/user-attachments/assets/e1eb53f8-fd13-4987-904c-2c34fab658d3" width="800"/>
+<img src="https://github.com/user-attachments/assets/50831dde-db72-4b78-8647-aebbaa0be387" width="800"/>
 
 ---
 
