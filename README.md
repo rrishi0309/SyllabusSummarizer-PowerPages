@@ -83,20 +83,32 @@ All fields are conditionally included — if content is not present in the sylla
 
 ## 📊 Visual Overview
 
+### Power Pages App Screenshots
 ### Power Pages Upload Interface
-![Upload UI](assets/upload_ui.png)
+![image](https://github.com/user-attachments/assets/aa0ee60e-e86d-4ade-8097-a16daf12826d)
 
 ### “How It Works” Modal Walkthrough
-![Modal](assets/how_it_works.png)
+![image](https://github.com/user-attachments/assets/bc39ef5a-e496-4957-835a-c6dd53d1a16e)
 
 ### GPT-Generated Summary Side-by-Side Preview
-![Summary View](assets/summary_ui.png)
-
-### Power Automate Flow (Forms Triggered)
-![Forms Flow](assets/flow_forms_triggered.png)
+![image](https://github.com/user-attachments/assets/1137484b-952f-462c-8b39-e3bb3a1a5102)
 
 ### Power Automate Flow (Power Pages Triggered)
-![Power Pages Flow](assets/flow_pages_triggered.png)
+![image](https://github.com/user-attachments/assets/6279bc1a-b089-4cac-a7c5-73befc7b3506)
+
+### Power Automate + Forms Screenshots
+### Mirosoft Forms
+![image](https://github.com/user-attachments/assets/1bc2f8e4-a918-4814-8d39-8c94e535801f)
+
+### Power Automate Flow (Forms Triggered)
+![image](https://github.com/user-attachments/assets/56b2199b-1731-4ec9-bee6-f306470501af)
+
+### Power Automate Forms - Email Screenshot
+![image](https://github.com/user-attachments/assets/7f519b05-7818-4050-bc7c-5edcff325c90)
+![image](https://github.com/user-attachments/assets/64215e57-51d9-47ac-8c16-abd412572b83)
+
+### Power Automate Flow (Drop a Item to Folder to Trigger - Experimental)
+![image](https://github.com/user-attachments/assets/ae08a4b8-240e-4cb8-89c4-fe0ec7ff90b2)
 
 ---
 
