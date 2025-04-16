@@ -124,7 +124,8 @@ All fields are conditionally included — if content is not present in the sylla
 <img src="https://github.com/user-attachments/assets/64215e57-51d9-47ac-8c16-abd412572b83" width="800"/>
 
 #### Power Automate Flow (Drop a Item to Folder to Trigger - Experimental)
-<img src="https://github.com/user-attachments/assets/ae08a4b8-240e-4cb8-89c4-fe0ec7ff90b2" width="800"/>
+<img src="![image](https://github.com/user-attachments/assets/9049eba0-0abc-4ec9-b6a5-3a83403d0e57)
+" width="800"/>
 
 ### AI Builder Prompt Editing in AI Hub
 <img src="https://github.com/user-attachments/assets/e1eb53f8-fd13-4987-904c-2c34fab658d3" width="800"/>
