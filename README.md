@@ -1,5 +1,7 @@
 # 📚 AI Syllabus Summarizer – Microsoft Power Platform Edition
 
+➡️ For the original **Retool-based version**, visit: [github.com/rrishi0309/AI-Syllabus-Summarizer](https://github.com/rrishi0309/AI-Syllabus-Summarizer)
+
 [![Power Platform](https://img.shields.io/badge/Built%20with-Microsoft%20Power%20Platform-0078D4?style=flat&logo=microsoft)]()
 [![OpenAI](https://img.shields.io/badge/Powered%20by-GPT--4o-8B00FF?style=flat)]()
 [![License](https://img.shields.io/badge/License-MIT-green)]()
