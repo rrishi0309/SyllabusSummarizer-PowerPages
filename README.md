@@ -10,7 +10,7 @@
 
 ## ✨ Description
 
-The **AI Syllabus Summarizer** is a low-code, AI-enhanced tool designed to help **university advisors** extract structured summaries from course syllabi. By combining Microsoft's Power Platform with **OpenAI's GPT-4o**, this solution automates the full journey: from syllabus upload → to summary generation → to PDF/Word export → to email delivery. 
+The **AI Syllabus Summarizer** is a low-code, AI-enhanced tool designed to help **university advisors** extract structured summaries from course syllabi. By combining Microsoft's Power Platform with **OpenAI's GPT-4o**, this solution automates the full journey: from syllabus upload → to summary generation → to PDF/Word export → to email delivery.
 
 It eliminates manual review, ensures formatting consistency, and operates with **zero data retention**, making it ideal for FERPA-aware environments. This solution aligns with Microsoft's **AI Builder** (Power Platform’s AI Hub) initiative — helping users deploy AI safely and without needing to write custom models.
 
@@ -79,13 +79,13 @@ All fields are conditionally included — if content is not present in the sylla
 
 ```
 📂 SYLLABUSSUMMARIZER-POWERPLATFORM/
-├── power_automate_flows/             # Exported flows for each trigger version
-│   ├── SyllabusSummarizerFolderAutomate_2025...
-│   ├── SyllabusSummarizerFormsAutomate_2025...
-│   └── SyllabusSummarizerManualAutomate_2025...
-├── power_platform/
-│   └── automate_export/              # AI Builder exports (JSON/templates)
-│       └── SyllabusSummarizerManualAutomate_2025...
+🔽️ power_automate_flows/             # Exported flows for each trigger version
+├── SyllabusSummarizerFolderAutomate_2025...
+├── SyllabusSummarizerFormsAutomate_2025...
+└── SyllabusSummarizerManualAutomate_2025...
+🔽️ power_platform/
+└── automate_export/              # AI Builder exports (JSON/templates)
+    └── SyllabusSummarizerManualAutomate_2025...
 ├── index.html                        # Power Pages or form landing UI
 ├── index.js                          # JS logic for interactivity
 ├── styles.css                        # Basic styling for components
@@ -99,35 +99,35 @@ All fields are conditionally included — if content is not present in the sylla
 
 ### Power Pages App Screenshots
 
-### Power Pages Upload Interface
-![image](https://github.com/user-attachments/assets/aa0ee60e-e86d-4ade-8097-a16daf12826d)
+#### Power Pages Upload Interface
+<img src="https://github.com/user-attachments/assets/aa0ee60e-e86d-4ade-8097-a16daf12826d" width="800"/>
 
-### “How It Works” Modal Walkthrough
-![image](https://github.com/user-attachments/assets/bc39ef5a-e496-4957-835a-c6dd53d1a16e)
+#### “How It Works” Modal Walkthrough
+<img src="https://github.com/user-attachments/assets/bc39ef5a-e496-4957-835a-c6dd53d1a16e" width="800"/>
 
-### GPT-Generated Summary Side-by-Side Preview
-![image](https://github.com/user-attachments/assets/1137484b-952f-462c-8b39-e3bb3a1a5102)
+#### GPT-Generated Summary Side-by-Side Preview
+<img src="https://github.com/user-attachments/assets/1137484b-952f-462c-8b39-e3bb3a1a5102" width="800"/>
 
-### Power Automate Flow (Power Pages Triggered)
-![image](https://github.com/user-attachments/assets/6279bc1a-b089-4cac-a7c5-73befc7b3506)
+#### Power Automate Flow (Power Pages Triggered)
+<img src="https://github.com/user-attachments/assets/6279bc1a-b089-4cac-a7c5-73befc7b3506" width="800"/>
 
 ### Power Automate + Forms Screenshots
 
-### Microsoft Forms
-![image](https://github.com/user-attachments/assets/1bc2f8e4-a918-4814-8d39-8c94e535801f)
+#### Microsoft Forms
+<img src="https://github.com/user-attachments/assets/1bc2f8e4-a918-4814-8d39-8c94e535801f" width="800"/>
 
-### Power Automate Flow (Forms Triggered)
-![image](https://github.com/user-attachments/assets/56b2199b-1731-4ec9-bee6-f306470501af)
+#### Power Automate Flow (Forms Triggered)
+<img src="https://github.com/user-attachments/assets/56b2199b-1731-4ec9-bee6-f306470501af" width="800"/>
 
-### Power Automate Forms - Email Screenshot
-![image](https://github.com/user-attachments/assets/7f519b05-7818-4050-bc7c-5edcff325c90)
-![image](https://github.com/user-attachments/assets/64215e57-51d9-47ac-8c16-abd412572b83)
+#### Power Automate Forms - Email Screenshot
+<img src="https://github.com/user-attachments/assets/7f519b05-7818-4050-bc7c-5edcff325c90" width="800"/>
+<img src="https://github.com/user-attachments/assets/64215e57-51d9-47ac-8c16-abd412572b83" width="800"/>
 
-### Power Automate Flow (Drop a Item to Folder to Trigger - Experimental)
-![image](https://github.com/user-attachments/assets/ae08a4b8-240e-4cb8-89c4-fe0ec7ff90b2)
+#### Power Automate Flow (Drop a Item to Folder to Trigger - Experimental)
+<img src="https://github.com/user-attachments/assets/ae08a4b8-240e-4cb8-89c4-fe0ec7ff90b2" width="800"/>
 
 ### AI Builder Prompt Editing in AI Hub
-![image](image.png)
+<img src="https://github.com/user-attachments/assets/e1eb53f8-fd13-4987-904c-2c34fab658d3" width="800"/>
 
 ---
 
