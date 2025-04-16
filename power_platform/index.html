@@ -1,0 +1,347 @@
+<!-- Built with ❤️ by Rishi Ramesh | https://github.com/rrishi0309/ | AI Solutions Engineer | University of Utah | © 2025 -->
+<meta charset="UTF-8" /><meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/><title>AI Syllabus Summarizer 📚</title
+><link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+<script src="https://unpkg.com/docx/dist/index.iife.js"></script>
+<!-- Header -->
+<header
+  style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; position: sticky; top: 0px; z-index: 100; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: var(--shadow);"
+>
+  <div
+    class="header-container"
+    style="box-sizing: border-box; max-width: 1280px; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; display: flex; justify-content: space-between; align-items: center;"
+  >
+    <div
+      class="logo"
+      style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: flex; align-items: center; row-gap: 0.75rem; column-gap: 0.75rem; color: var(--primary); font-weight: 700; font-size: 1.25rem;"
+    >
+      <i
+        class="fas fa-robot"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; background-color: var(--primary); color: white; width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center; font-size: 1rem;"
+      ></i
+      ><span
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+        >AI Syllabus Summarizer</span
+      >
+    </div>
+    <div
+      class="header-actions"
+      style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+    >
+      <button
+        id="how-it-works-btn"
+        class="btn btn-secondary"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; row-gap: 0.5rem; column-gap: 0.5rem; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; border-top-left-radius: 9999px; border-top-right-radius: 9999px; border-bottom-right-radius: 9999px; border-bottom-left-radius: 9999px; font-weight: 600; font-size: 0.875rem; transition-behavior: normal; transition-duration: 0.2s; transition-timing-function: ease; transition-delay: 0s; transition-property: all; cursor: pointer; border-top-width: initial; border-right-width: initial; border-bottom-width: initial; border-left-width: initial; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; outline-color: initial; outline-style: none; outline-width: initial; background-color: white; color: var(--text-medium); box-shadow: var(--shadow-sm);"
+      >
+        <i
+          class="fas fa-question-circle"
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+        ></i>
+        How it works</button
+      ><button
+        id="feedback-btn"
+        class="btn btn-primary"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; row-gap: 0.5rem; column-gap: 0.5rem; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; border-top-left-radius: 9999px; border-top-right-radius: 9999px; border-bottom-right-radius: 9999px; border-bottom-left-radius: 9999px; font-weight: 600; font-size: 0.875rem; transition-behavior: normal; transition-duration: 0.2s; transition-timing-function: ease; transition-delay: 0s; transition-property: all; cursor: pointer; border-top-width: initial; border-right-width: initial; border-bottom-width: initial; border-left-width: initial; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; outline-color: initial; outline-style: none; outline-width: initial; background-color: var(--primary); color: white;"
+      >
+        <i
+          class="fas fa-star"
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+        ></i>
+        Give Feedback
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Main Content -->
+<div
+  class="container"
+  style="box-sizing: border-box; max-width: 1280px; margin-top: 2rem; margin-right: auto; margin-bottom: 2rem; margin-left: auto; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem;"
+>
+  <!-- Intro -->
+  <div
+    class="intro"
+    style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; text-align: center; max-width: 640px; margin-top: 0px; margin-right: auto; margin-bottom: 2rem; margin-left: auto;"
+  >
+    <h2
+      style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; font-size: 1.5rem; margin-bottom: 0.75rem; background-clip: text; color: transparent;"
+    >
+      Simplify Your Course Planning
+    </h2>
+    <p
+      style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; color: var(--text-medium);"
+    >
+      Upload a PDF syllabus and get an AI-powered summary highlighting key
+      dates, requirements, and course objectives.
+    </p>
+  </div>
+  <!-- Upload Card -->
+  <div
+    class="upload-card"
+    style="margin-top: 0px; margin-right: 0px; margin-left: 0px; box-sizing: border-box; background-color: white; box-shadow: var(--shadow-lg); padding-top: 2rem; padding-right: 2rem; padding-bottom: 2rem; padding-left: 2rem; margin-bottom: 2rem; transition-behavior: normal; transition-duration: 0.3s; transition-timing-function: ease; transition-delay: 0s; transition-property: all;"
+  >
+    <div
+      class="upload-flex"
+      style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: flex; flex-direction: column; row-gap: 2rem; column-gap: 2rem; align-items: center;"
+    >
+      <div
+        class="upload-image"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; flex-grow: 0; flex-shrink: 0; flex-basis: auto; display: flex; justify-content: center;"
+      >
+        <img
+          id="status-gif"
+          src="/hello.gif"
+          alt="Upload Status"
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; width: 150px; height: 150px; object-fit: contain; transition-behavior: normal; transition-duration: 0.5s; transition-timing-function: ease; transition-delay: 0s; transition-property: all;"
+        />
+      </div>
+      <label
+        id="dropzone"
+        class="dropzone"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; flex-grow: 1; flex-shrink: 1; flex-basis: 0%; background-color: rgb(245, 247, 255); padding-top: 2rem; padding-right: 2rem; padding-bottom: 2rem; padding-left: 2rem; text-align: center; cursor: pointer; transition-behavior: normal; transition-duration: 0.3s; transition-timing-function: ease; transition-delay: 0s; transition-property: all;"
+        ><i
+          class="fas fa-cloud-upload-alt"
+          style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; display: block;"
+        ></i
+        ><span
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; color: var(--primary); font-weight: 500;"
+          >Click or drag &amp; drop your syllabus PDF here</span
+        ></label
+      >
+    </div>
+    <div
+      id="file-name"
+      class="file-name"
+      style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; margin-top: 1rem; text-align: center; color: var(--primary); font-weight: 500; min-height: 1.5rem;"
+    ></div>
+    <div
+      id="error-message"
+      class="error-message"
+      style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; text-align: center; color: rgb(239, 68, 68); margin-top: 1rem; min-height: 1.5rem;"
+    ></div>
+  </div>
+  <input
+    type="file"
+    id="pdfUpload"
+    accept=".pdf"
+    style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: none;"
+  /><!-- Loader -->
+  <div
+    id="loader"
+    class="loader"
+    style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: none; margin-top: 2rem; margin-right: auto; margin-bottom: 2rem; margin-left: auto; text-align: center;"
+  >
+    <div
+      class="loader-spinner"
+      style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.1); border-right-color: rgba(0, 0, 0, 0.1); border-bottom-color: rgba(0, 0, 0, 0.1); border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; border-left-color: var(--primary); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; width: 36px; height: 36px; animation-duration: 1s; animation-timing-function: linear; animation-delay: 0s; animation-iteration-count: infinite; animation-direction: normal; animation-fill-mode: none; animation-play-state: running; animation-name: spin; animation-timeline: auto; animation-range-start: normal; animation-range-end: normal; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto;"
+    ></div>
+    <p
+      class="processing-message"
+      style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; color: var(--text-medium); margin-top: 0.75rem; font-size: 0.875rem;"
+    >
+      Analyzing your syllabus with AI...
+    </p>
+  </div>
+  <!-- Results -->
+  <div
+    class="results-container"
+    style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: grid; row-gap: 1.5rem; column-gap: 1.5rem; margin-top: 2rem;"
+  >
+    <!-- PDF Preview -->
+    <div
+      id="pdf-preview"
+      class="pdf-preview"
+      style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; background-color: white; box-shadow: var(--shadow); overflow-x: hidden; overflow-y: hidden; display: none; height: 700px;"
+    >
+      <div
+        class="card-header"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; display: flex; justify-content: space-between; align-items: center;"
+      >
+        <div
+          class="card-title"
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: flex; align-items: center; row-gap: 0.5rem; column-gap: 0.5rem; font-weight: 600; color: var(--text-dark); font-size: 0.875rem;"
+        >
+          <i
+            class="fas fa-file-pdf"
+            style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+          ></i
+          ><span
+            style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+            >Uploaded PDF</span
+          >
+        </div>
+      </div>
+      <div
+        class="card-body"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; height: calc(100% - 56px); overflow-x: auto; overflow-y: auto;"
+      >
+        <embed
+          id="pdf-embed"
+          type="application/pdf"
+          class="pdf-embed"
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; width: 100%; height: 100%; border-top-width: initial; border-right-width: initial; border-bottom-width: initial; border-left-width: initial; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial;"
+        />
+      </div>
+    </div>
+    <!-- Summary Card -->
+    <div
+      id="gpt-summary"
+      class="summary-card"
+      style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; background-color: rgb(255, 249, 219); box-shadow: var(--shadow); overflow-x: hidden; overflow-y: hidden; display: none; height: 700px; position: relative;"
+    >
+      <div
+        class="card-header"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; display: flex; justify-content: space-between; align-items: center;"
+      >
+        <div
+          class="card-title"
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: flex; align-items: center; row-gap: 0.5rem; column-gap: 0.5rem; font-weight: 600; color: var(--text-dark); font-size: 0.875rem;"
+        >
+          <i
+            class="fas fa-file-alt"
+            style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+          ></i
+          ><span
+            style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+            >AI Summary</span
+          >
+        </div>
+        <div
+          class="export-buttons"
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: flex; row-gap: 0.5rem; column-gap: 0.5rem;"
+        >
+          <button
+            id="export-pdf"
+            class="btn btn-export btn-pdf"
+            style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; row-gap: 0.5rem; column-gap: 0.5rem; border-top-left-radius: 9999px; border-top-right-radius: 9999px; border-bottom-right-radius: 9999px; border-bottom-left-radius: 9999px; font-weight: 600; transition-behavior: normal; transition-duration: 0.2s; transition-timing-function: ease; transition-delay: 0s; transition-property: all; cursor: pointer; border-top-width: initial; border-right-width: initial; border-bottom-width: initial; border-left-width: initial; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; outline-color: initial; outline-style: none; outline-width: initial; padding-top: 0.25rem; padding-right: 0.75rem; padding-bottom: 0.25rem; padding-left: 0.75rem; font-size: 0.75rem; background-color: rgb(239, 68, 68); color: white;"
+          >
+            <i
+              class="fas fa-file-pdf"
+              style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+            ></i>
+            PDF</button
+          ><button
+            id="export-word"
+            class="btn btn-export btn-word"
+            style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; row-gap: 0.5rem; column-gap: 0.5rem; border-top-left-radius: 9999px; border-top-right-radius: 9999px; border-bottom-right-radius: 9999px; border-bottom-left-radius: 9999px; font-weight: 600; transition-behavior: normal; transition-duration: 0.2s; transition-timing-function: ease; transition-delay: 0s; transition-property: all; cursor: pointer; border-top-width: initial; border-right-width: initial; border-bottom-width: initial; border-left-width: initial; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; outline-color: initial; outline-style: none; outline-width: initial; padding-top: 0.25rem; padding-right: 0.75rem; padding-bottom: 0.25rem; padding-left: 0.75rem; font-size: 0.75rem; background-color: rgb(37, 99, 235); color: white;"
+          >
+            <i
+              class="fas fa-file-word"
+              style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+            ></i>
+            Word
+          </button>
+        </div>
+      </div>
+      <div
+        class="card-body"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; height: calc(100% - 56px); overflow-x: auto; overflow-y: auto;"
+      >
+        <p
+          class="summary-note"
+          style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; font-style: italic; color: var(--text-light); font-size: 0.75rem; margin-bottom: 1rem;"
+        >
+          📝 This syllabus summary is AI-generated based on the provided
+          document.
+        </p>
+        <div
+          id="summary-content"
+          class="summary-content"
+          style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; font-size: 0.875rem; line-height: 1.6; color: var(--text-dark); white-space-collapse: preserve-breaks; text-wrap-mode: wrap;"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div
+  id="how-it-works-modal"
+  style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; display: none; position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-image: initial; background-position-x: initial; background-position-y: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0.6); z-index: 1000; align-items: center; justify-content: center;"
+>
+  <div
+    class="modal-content"
+    style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; background-image: initial; background-position-x: initial; background-position-y: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: white; max-width: 600px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px; padding-top: 2rem; padding-right: 2rem; padding-bottom: 2rem; padding-left: 2rem; position: relative; box-shadow: var(--shadow-lg);"
+  >
+    <button
+      id="close-modal"
+      style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; position: absolute; top: 1rem; right: 1rem; background-image: none; background-position-x: initial; background-position-y: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; border-top-width: initial; border-right-width: initial; border-bottom-width: initial; border-left-width: initial; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; cursor: pointer; font-size: 1.25rem; color: var(--text-medium);"
+    >
+      <i
+        class="fas fa-times"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box;"
+      ></i>
+    </button>
+    <h3
+      style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; margin-bottom: 1rem; font-size: 1.5rem; color: var(--primary); text-align: center;"
+    >
+      How AI Syllabus Summarizer Works
+    </h3>
+    <ol
+      style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; box-sizing: border-box; margin-bottom: 1.5rem; padding-left: 1.5rem;"
+    >
+      <li
+        style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; margin-bottom: 0.75rem; font-size: 1rem; color: var(--text-dark);"
+      >
+        Upload your syllabus PDF file
+      </li>
+      <li
+        style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; margin-bottom: 0.75rem; font-size: 1rem; color: var(--text-dark);"
+      >
+        Our AI analyzes the document structure and content
+      </li>
+      <li
+        style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; margin-bottom: 0.75rem; font-size: 1rem; color: var(--text-dark);"
+      >
+        The system identifies key information: course details, objectives,
+        grading policies, etc.
+      </li>
+      <li
+        style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; margin-bottom: 0.75rem; font-size: 1rem; color: var(--text-dark);"
+      >
+        A structured summary is generated for easy reference
+      </li>
+      <li
+        style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; margin-bottom: 0.75rem; font-size: 1rem; color: var(--text-dark);"
+      >
+        Export to PDF or Word for convenient access
+      </li>
+    </ol>
+    <p
+      style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; color: var(--text-medium); font-size: 0.9rem; line-height: 1.4;"
+    >
+      Your uploaded documents are processed securely and not stored permanently
+      after analysis.
+    </p>
+  </div>
+</div>
+<!-- Footer -->
+<footer
+  style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-sizing: border-box; text-align: center; padding-top: 2rem; padding-right: 0px; padding-bottom: 2rem; padding-left: 0px; color: var(--text-light); font-size: 0.75rem;"
+>
+  Built with
+  <span
+    style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; box-sizing: border-box; color: #ef4444;"
+    >❤</span
+  >
+  at David Eccles School of Business
+</footer>
+<div
+  class="row sectionBlockLayout text-start"
+  style="box-sizing: border-box; display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;"
+>
+  <div
+    class="container"
+    style="box-sizing: border-box; max-width: 1280px; margin-top: 2rem; margin-right: auto; margin-bottom: 2rem; margin-left: auto; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; padding: 0px; display: flex; flex-wrap: wrap;"
+  >
+    <div
+      class="col-lg-12 columnBlockLayout"
+      style="margin: 0px; padding: 0px; box-sizing: border-box; flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;"
+    ></div>
+  </div>
+</div>
+<!-- Built with ❤️ by Rishi Ramesh | https://github.com/rrishi0309/ | AI Solutions Engineer | University of Utah | © 2025 -->
